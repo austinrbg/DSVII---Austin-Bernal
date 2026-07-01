@@ -1,0 +1,13 @@
+{
+    "name": "austin/parcial-rrhh",
+    "type": "project",
+    "authors": [
+        {
+            "name": "austinrbg",
+            "email": "austinr.bernal@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.8"
+    }
+}
