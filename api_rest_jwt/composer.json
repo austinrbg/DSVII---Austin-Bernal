@@ -1,0 +1,19 @@
+{
+    "name": "austin/api-rest-jwt",
+    "description": "Laboratorio API REST con JWT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "austinrbg",
+            "email": "austinr.bernal@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

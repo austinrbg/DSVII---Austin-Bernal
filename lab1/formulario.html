@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de entrada del dato</title>
+
+    <!-- Fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #e0eafc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 240px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border: 1px solid #ff6f91;
+        }
+
+        input[type="submit"] {
+            padding: 12px 25px;
+            background: #ff6f91; /* rosado */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #e05578;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de entrada del dato</h2>
+        <form method="post" action="pag2.php">
+            <label for="nombre">Ingrese su nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" required><br>
+            <label for="edad">Ingrese su edad:</label><br>
+            <input type="text" name="edad" id="edad" required><br><br>
+            <input type="submit" value="Confirmar">
+        </form>
+    </div>
+</body>
+</html>
